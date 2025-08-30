@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body background and overall layout */
+body {
+  background: url(https://img.freepik.com/premium-photo/top-view-resumes-applicants-magnifying-glass-green-background-job-search-concept_35674-13811.jpg);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-size: cover;        /* Ensures the image covers the entire screen */
+  background-repeat: no-repeat;  /* Prevents tiling */
+  background-position: center;   /* Keeps the image centered */
+  background-attachment: fixed;  /* Keeps the image fixed during scroll */
+}
+
+/* Container for dashboard */
+.container {
+  background-color:#fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px 8px rgb(140, 206, 206);
+  max-width: 700px;
+  width: 100%;
+  
+}
+
+/* Welcome heading */
+.container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* Subheadings */
+.container h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin: 20px 0 10px;
+}
+
+/* Resume entry styling */
+.resume-entry {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-left: 6px solid #3498db;
+  border-right: 1px solid #3498db;
+  border-top: 1px solid #3498db;
+  border-bottom: 1px solid #3498db;
+  
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.resume-entry:hover {
+  background: #a7b1bc;
+  transform: scale(1.01);
+}
+
+/* Resume entry links */
+.resume-entry a {
+  color: #2575fc;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+.resume-entry a:hover {
+  text-decoration: underline;
+}
+
+/* Message if no resume found */
+.container p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* Logout link */
+.container a[href="logout.php"] {
+  display: inline-block;
+  margin-top: 30px;
+  color: white;
+  background-color: lightblue;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.container a[href="logout.php"]:hover {
+  background-color: rgb(36, 124, 153);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .resume-entry {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.resume-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+aside.sidebar {
+  background-color: #353535;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.sidebar h3 {
+  border-bottom: 2px solid #ffb400;
+  padding-bottom: 0.25rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.sidebar p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  text-align: left;
+}
+
+main.main-content {
+  padding: 2rem;
+}
+
+.main-content header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.main-content header p {
+  color: #ffb400;
+  margin: 0.2rem 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  color: #1a1e35;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.skills-list span {
+  background-color: #eee;
+  border-radius: 10px;
+  height: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-list span::after {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #ffb400;
+  width: 100%;
+}
+
+.dwnBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffb400;
+  color: #1a1e35;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}

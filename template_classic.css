@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .resume {
+    width: 794px; /* A4 width at 96dpi */
+    height: 1123px; /* A4 height at 96dpi */
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #6c6969;
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    overflow: hidden;
+    /* page-break-inside: avoid; */
+  }
+  header {
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.3rem;
+    color: #2c3e50;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-top: 25px;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+  }
+  
+  ul {
+    /* list-style-type: disc; */
+    margin-left: 20px;
+  }
+  
+  section p,
+  ul li {
+    font-size: 1rem;
+    /* line-height: 1.6; */
+    margin-bottom: 10px;
+  }
+  
+  .dwnBtn {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(218, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dwnBtn:hover {
+    background-color: rgb(111, 7, 7);
+  }
+
+  section, header {
+    page-break-inside: avoid;
+  }
+  

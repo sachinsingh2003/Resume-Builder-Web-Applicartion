@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Container */
+.container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 40px 50px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.container h2 {
+  font-size: 1.4rem;
+  color: #34495e;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 6px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* Form Input Styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0 20px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+  background: #fff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Label */
+label {
+  display: block;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Back to Dashboard Link */
+.container p {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.container a:hover {
+  color: #1d5e87;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+}
+
+input[type="file"] {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+img {
+  margin-top: 10px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid #555;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
